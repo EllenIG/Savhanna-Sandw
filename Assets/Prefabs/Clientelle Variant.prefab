@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 7063762261410847442, guid: bd0ba43367f4ac245a1632e6b8091faa, type: 3}
+    - target: {fileID: 913332869083530839, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
+      propertyPath: someSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27483911f4deeef4caa9ae8c281983ed, type: 3}
     - target: {fileID: 2360914992014479128, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
       propertyPath: m_Name
       value: Clientelle Variant
@@ -18,6 +22,22 @@ PrefabInstance:
     - target: {fileID: 2360914992014479128, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381988972482307527, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381988972482307527, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
+      propertyPath: m_FlipY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381988972482307527, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d024bae76028bae48b63b8d861b13911, type: 3}
+    - target: {fileID: 3381988972482307527, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4270657500114329114, guid: f116f33c71018fe45bbcf4ae978811d4, type: 3}
       propertyPath: m_RootOrder

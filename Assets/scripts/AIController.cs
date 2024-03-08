@@ -13,6 +13,7 @@ public class AIController : MonoBehaviour
     public float speed = 2f;
     private float minDistance = 1f;
     private float range;
+   // public Sprite someSprite;
 
 
 
@@ -20,6 +21,7 @@ public class AIController : MonoBehaviour
 
     void Start()
     {
+       // this.GetComponent<SpriteRenderer>().sprite = someSprite;
         target = GameObject.FindWithTag("Player").transform;
     }
 
@@ -37,21 +39,6 @@ public class AIController : MonoBehaviour
 
 
 
-
-
-        // transform.LookAt(Player);
-        // if (Vector2.Distance(transform.position, Player.position) >= MinDist)
-        // {
-
-        //   transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-
-
-
-        // if (Vector2.Distance(transform.position, Player.position) <= MaxDist)
-        {
-            //Here Call any function U want Like Shoot at here or something
-        }
-        //}
 
 
     }

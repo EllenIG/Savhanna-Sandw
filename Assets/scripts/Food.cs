@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    [Range(1, 10)]
-    [SerializeField] private float speed = 10f;
-
-    [Range(1, 10)]
-    [SerializeField] private float lifetime = 3f;
-
+    private GameObject enemy;
+    public float force;
+    private float lifetime = 1f;
     private Rigidbody2D rb;
+    private AudioSource audioSource;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifetime);
+        enemy = GameObject.FindGameObjectWithTag("enemy");
+        
+
+        Vector3 direction = transform.position;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = transform.up * speed;
+      
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -29,6 +33,10 @@ public class Food : MonoBehaviour
         if (col.gameObject.CompareTag("Enemy"))
         {
             Destroy(col.gameObject);
+            Destroy(gameObject);
+            ScoreManager.instance.AddPoint();
+            audioSource.Play();
         }
+
     }
 }
